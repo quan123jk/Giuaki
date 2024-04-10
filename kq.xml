@@ -1,10 +1,6 @@
 <students>
-  <student id="1">
+  <student id="">
     <age>9400f1b21cb527d7fa3d3eabba93557a18ebe7a2ca4e471cfe5e4c5b4ca7f767</age>
     <isPrime>false</isPrime>
-  </student>
-  <student id="2">
-    <age>9400f1b21cb527d7fa3d3eabba93557a18ebe7a2ca4e471cfe5e4c5b4ca7f767</age>
-    <isPrime>true</isPrime>
   </student>
 </students>

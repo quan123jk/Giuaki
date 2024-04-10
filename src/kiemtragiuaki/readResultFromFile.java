@@ -37,6 +37,7 @@ public class readResultFromFile {
                 String prime = studentElement.getElementsByTagName("isPrime").item(0).getTextContent();
                 boolean isPrime = Boolean.parseBoolean(prime);
                 String age = decodeEncodedString(encodedAge);
+                
                  students.add(new Student(id, age, isPrime));
             }
             
@@ -50,7 +51,7 @@ public class readResultFromFile {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] encodedHash = digest.digest(encodedString.getBytes(StandardCharsets.UTF_8));
 
-            // Convert byte array to hexadecimal string
+         
             StringBuilder hexString = new StringBuilder(2 * encodedHash.length);
             for (byte b : encodedHash) {
                 String hex = Integer.toHexString(0xff & b);

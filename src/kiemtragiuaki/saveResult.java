@@ -27,7 +27,7 @@ public class saveResult {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("kq.xml"))) {
             try {
                 threads2.join();
-                threads3.join();
+                  threads3.join();
             } catch (InterruptedException ex) {
                 Logger.getLogger(saveResult.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -35,7 +35,7 @@ public class saveResult {
             // Ghi thông tin của mỗi sinh viên vào tệp XML
             writer.write("<students>\n");
             for (Student student : students) {
-                writer.write("  <student id=\"" + student.getId() + "\">\n");
+                 writer.write("  <student id=\"" + student.getId() + "\">\n");
                 writer.write("    <age>" + student.getEncodedAge() + "</age>\n");
                 writer.write("    <isPrime>" + student.GetIsPrime()+ "</isPrime>\n");
                 writer.write("  </student>\n");

@@ -51,11 +51,11 @@ public class main {
            checkPrime prime = new checkPrime(students);
             prime.start();
          
-       saveResult saResult = new saveResult(students, aOfStudent, prime);
-saResult.writeResult();
+            saveResult saResult = new saveResult(students, aOfStudent, prime);
+            saResult.writeResult();
 
-     List<Student> students1 = readResult("kq.xml");
-      for (Student student : students) {
+        List<Student> students1 = readResult("kq.xml");
+      for (Student student : students1) {
             System.out.println(student); 
         }
       }

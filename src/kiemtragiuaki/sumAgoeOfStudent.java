@@ -43,7 +43,7 @@ public class sumAgoeOfStudent extends Thread{
         }
     }
 
-    private String encodeSHA256(String input) throws NoSuchAlgorithmException {
+    public String encodeSHA256(String input) throws NoSuchAlgorithmException {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
         byte[] encodedHash = digest.digest(input.getBytes());
         StringBuilder hexString = new StringBuilder(2 * encodedHash.length);

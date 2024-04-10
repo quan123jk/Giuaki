@@ -16,11 +16,11 @@ public class saveStudentToFile {
             writer.write("<students>\n");
 
             for (Student student : students) {
-                writer.write("  <student id=\"" + student.getId() + "\">\n");
-                writer.write("    <name>" + student.getName() + "</name>\n");
+               writer.write("<student>\n");
+               writer.write("    <name>" + student.getName() + "</name>\n");
                 writer.write("    <address>" + student.getAddress() + "</address>\n");
                 writer.write("    <dateOfBirth>" + student.getDateOfBirht()+ "</dateOfBirth>\n");
-                writer.write("  </student>\n");
+                writer.write("  </student>\n"); 
             }
 
             writer.write("</students>");

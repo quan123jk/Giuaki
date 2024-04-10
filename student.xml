@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student id="1">
+    <name>quan</name>
+    <address>da nang</address>
+    <dateOfBirth>21/02/2005</dateOfBirth>
+  </student>
+  <student id="2">
+    <name>hieu</name>
+    <address>da nang</address>
+    <dateOfBirth>22/02/2005</dateOfBirth>
+  </student>
+</students>
